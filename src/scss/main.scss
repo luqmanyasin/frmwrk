@@ -5,21 +5,25 @@
     background: #F9FAFB;
     color: #263446;
 }
+
 body, html {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
 }
+
 * {
     box-sizing: border-box;
 }
+
 h1, h2, h3, h4 {
     margin: 0;
     padding: 0 0 .2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 .frmwrk {
     text-transform: lowercase;
     overflow: hidden;
@@ -31,10 +35,12 @@ h1, h2, h3, h4 {
     background: #263446;
     width: 117px;
 }
+
 .container {
     width: 950px;
     margin: 0 auto;
 }
+
 .button {
     background: #5978ad;
     box-shadow: 0 2px 4px rgba(89, 120, 173, 0.2), 0 0 2px rgba(89, 120, 173, 0.2);
@@ -86,12 +92,14 @@ h1, h2, h3, h4 {
         }
     }
 }
+
 .card {
     background: #ffffff;
     padding: 1.5rem 1.5rem;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(50, 50, 93, 0.1), 0 0 2px rgba(95, 151, 206, 0.1);
     margin-top: 1.5rem;
+
     &__title {
         margin-bottom: .2rem;
         border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
