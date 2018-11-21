@@ -1,9 +1,11 @@
-body, html {
+:root, body, html {
   font-family: Inter UI,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
   font-weight: 400;
   font-size: 16px;
   background: #F9FAFB;
-  color: #263446;
+  color: #263446; }
+
+body, html {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -36,12 +38,12 @@ h1, h2, h3, h4 {
 .button {
   background: #5978ad;
   box-shadow: 0 2px 4px rgba(89, 120, 173, 0.2), 0 0 2px rgba(89, 120, 173, 0.2);
-  font: 600 normal 13px "Helvetica Neue", Arial;
+  font: 600 normal 0.8125rem "Helvetica Neue", Arial;
   color: #f6f6f6;
   outline: none;
   border: none;
-  padding: 15px 22px;
-  border-radius: 4px;
+  padding: 0.9375rem 1.375rem;
+  border-radius: 0.25rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   text-decoration: none;
@@ -50,17 +52,32 @@ h1, h2, h3, h4 {
   cursor: pointer; }
   .button:hover {
     background: #6587c1; }
+  .button--dark {
+    background: #30404f;
+    box-shadow: 0 2px 4px rgba(48, 64, 79, 0.2), 0 0 2px rgba(48, 64, 79, 0.2); }
+    .button--dark:hover {
+      background: #2a3e55; }
+  .button--inverted {
+    background: #f6f6f6;
+    color: #6587c1; }
+    .button--inverted:hover {
+      background: #eef0f1; }
   .button--green {
     background: #65a168;
     box-shadow: 0 2px 4px rgba(101, 161, 104, 0.2), 0 0 2px rgba(101, 161, 104, 0.2); }
     .button--green:hover {
       background: #59ad6f; }
+  .button--red {
+    background: #a16565;
+    box-shadow: 0 2px 4px rgba(161, 101, 101, 0.2), 0 0 2px rgba(161, 101, 101, 0.2); }
+    .button--red:hover {
+      background: #ad5959; }
 
 .card {
   background: #ffffff;
   padding: 1.5rem 1.5rem;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(50, 50, 93, 0.1);
+  box-shadow: 0 2px 4px rgba(50, 50, 93, 0.1), 0 0 2px rgba(95, 151, 206, 0.1);
   margin-top: 1.5rem; }
   .card__title {
     margin-bottom: .2rem;
