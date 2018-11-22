@@ -50,27 +50,27 @@ h1, h2, h3, h4 {
   transition: .2s all;
   display: inline-block;
   cursor: pointer; }
-  .button:hover {
+  .button:hover, .button:focus {
     background: #6587c1; }
   .button--dark {
     background: #30404f;
     box-shadow: 0 0.125rem 0.25rem rgba(48, 64, 79, 0.2), 0 0 0.125rem rgba(48, 64, 79, 0.2); }
-    .button--dark:hover {
+    .button--dark:hover, .button--dark:focus {
       background: #2a3e55; }
   .button--inverted {
     background: #f6f6f6;
     color: #6587c1; }
-    .button--inverted:hover {
+    .button--inverted:hover, .button--inverted:focus {
       background: #eef0f1; }
   .button--green {
     background: #65a168;
     box-shadow: 0 0.125rem 0.25rem rgba(101, 161, 104, 0.2), 0 0 0.125rem rgba(101, 161, 104, 0.2); }
-    .button--green:hover {
+    .button--green:hover, .button--green:focus {
       background: #59ad6f; }
   .button--red {
     background: #a16565;
     box-shadow: 0 0.125rem 0.25rem rgba(161, 101, 101, 0.2), 0 0 0.125rem rgba(161, 101, 101, 0.2); }
-    .button--red:hover {
+    .button--red:hover, .button--red:focus {
       background: #ad5959; }
 
 .card {
