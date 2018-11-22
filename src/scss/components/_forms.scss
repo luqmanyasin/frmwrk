@@ -28,10 +28,7 @@ input[type=text], input[type=email], input[type=password], textarea {
         padding-left: 2rem;
         margin: 0;
     }
-    /**
-     * This needs to be extracted to be on input in JS
-     */
-    &:hover {
+    &:focus-within {
         &:before {
             color: rgba(0, 0, 0, 0.7);
         }

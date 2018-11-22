@@ -98,10 +98,7 @@ input[type=text], input[type=email], input[type=password], textarea {
 
 .form-row[ico] {
   position: relative;
-  margin: .3rem 0;
-  /**
-     * This needs to be extracted to be on input in JS
-     */ }
+  margin: .3rem 0; }
   .form-row[ico]:before {
     position: absolute;
     left: 10px;
@@ -111,5 +108,5 @@ input[type=text], input[type=email], input[type=password], textarea {
   .form-row[ico] input {
     padding-left: 2rem;
     margin: 0; }
-  .form-row[ico]:hover:before {
+  .form-row[ico]:focus-within:before {
     color: rgba(0, 0, 0, 0.7); }
