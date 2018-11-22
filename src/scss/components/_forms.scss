@@ -3,7 +3,7 @@ input[type=text], input[type=email], input[type=password], textarea {
     padding: rem(12) rem(13) rem(12);
     border: rem(1) solid transparent;
     box-shadow: 0 rem(1) rem(3) 0 #e6ebf1;
-    transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease, border 200ms ease;
     outline: none;
     font-size: .9rem;
     box-sizing: border-box;
@@ -11,6 +11,7 @@ input[type=text], input[type=email], input[type=password], textarea {
     margin: .3rem .3rem 0 0;
     &:focus {
         box-shadow: 0 rem(1) rem(3) 0 #cfd7df;
+        border-color: #0080ff;
     }
 }
 
