@@ -56,7 +56,7 @@ h1, h2, h3, h4 {
     background: #30404f;
     box-shadow: 0 0.125rem 0.25rem rgba(48, 64, 79, 0.2), 0 0 0.125rem rgba(48, 64, 79, 0.2); }
     .button--dark:hover, .button--dark:focus {
-      background: #2a3e55; }
+      background: #38526f; }
   .button--inverted {
     background: #f6f6f6;
     color: #6587c1; }
