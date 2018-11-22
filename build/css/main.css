@@ -19,7 +19,7 @@ h1, h2, h3, h4 {
   margin: 0;
   padding: 0 0 .2rem;
   text-transform: uppercase;
-  letter-spacing: 2px; }
+  letter-spacing: 0.125rem; }
 
 .frmwrk {
   text-transform: lowercase;
@@ -30,21 +30,21 @@ h1, h2, h3, h4 {
   color: #f6f6f6;
   display: inline-block;
   background: #263446;
-  width: 117px; }
+  width: 7.3125rem; }
 
 .container {
-  width: 950px;
+  width: 59.375rem;
   margin: 0 auto; }
 
 .button {
   background: #5978ad;
-  box-shadow: 0 2px 4px rgba(89, 120, 173, 0.2), 0 0 2px rgba(89, 120, 173, 0.2);
+  box-shadow: 0 0.125rem 0.25rem rgba(89, 120, 173, 0.2), 0 0 0.125rem rgba(89, 120, 173, 0.2);
   font: 600 normal 0.8125rem "Helvetica Neue", Arial;
   color: #f6f6f6;
   outline: none;
   border: none;
   padding: 0.9375rem 1.375rem;
-  letter-spacing: 3px;
+  letter-spacing: 0.1875rem;
   text-transform: uppercase;
   text-decoration: none;
   transition: .2s all;
@@ -54,7 +54,7 @@ h1, h2, h3, h4 {
     background: #6587c1; }
   .button--dark {
     background: #30404f;
-    box-shadow: 0 2px 4px rgba(48, 64, 79, 0.2), 0 0 2px rgba(48, 64, 79, 0.2); }
+    box-shadow: 0 0.125rem 0.25rem rgba(48, 64, 79, 0.2), 0 0 0.125rem rgba(48, 64, 79, 0.2); }
     .button--dark:hover {
       background: #2a3e55; }
   .button--inverted {
@@ -64,45 +64,46 @@ h1, h2, h3, h4 {
       background: #eef0f1; }
   .button--green {
     background: #65a168;
-    box-shadow: 0 2px 4px rgba(101, 161, 104, 0.2), 0 0 2px rgba(101, 161, 104, 0.2); }
+    box-shadow: 0 0.125rem 0.25rem rgba(101, 161, 104, 0.2), 0 0 0.125rem rgba(101, 161, 104, 0.2); }
     .button--green:hover {
       background: #59ad6f; }
   .button--red {
     background: #a16565;
-    box-shadow: 0 2px 4px rgba(161, 101, 101, 0.2), 0 0 2px rgba(161, 101, 101, 0.2); }
+    box-shadow: 0 0.125rem 0.25rem rgba(161, 101, 101, 0.2), 0 0 0.125rem rgba(161, 101, 101, 0.2); }
     .button--red:hover {
       background: #ad5959; }
 
 .card {
   background: #fdfdfd;
   padding: 1.5rem 1.5rem;
-  box-shadow: 0 2px 4px rgba(50, 50, 93, 0.1), 0 0 2px rgba(95, 151, 206, 0.1);
+  box-shadow: 0 0.125rem 0.25rem rgba(50, 50, 93, 0.1), 0 0 0.125rem rgba(95, 151, 206, 0.1);
   margin-top: 1.5rem; }
   .card__title {
     margin-bottom: .2rem;
-    border-bottom: 1.5px solid rgba(0, 0, 0, 0.05); }
+    border-bottom: 0.09375rem solid rgba(0, 0, 0, 0.05); }
 
 input[type=text], input[type=email], input[type=password], textarea {
   background-color: #ffffff;
-  padding: 8px 12px;
-  border: 1px solid transparent;
-  box-shadow: 0 1px 3px 0 #e6ebf1;
+  padding: 0.75rem 0.8125rem 0.75rem;
+  border: 0.0625rem solid transparent;
+  box-shadow: 0 0.0625rem 0.1875rem 0 #e6ebf1;
   transition: box-shadow 150ms ease;
   outline: none;
   font-size: .9rem;
   box-sizing: border-box;
-  min-width: 212px;
-  margin: .3rem 0; }
+  min-width: 13.25rem;
+  margin: .3rem .3rem 0 0; }
   input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
-    box-shadow: 0 1px 3px 0 #cfd7df; }
+    box-shadow: 0 0.0625rem 0.1875rem 0 #cfd7df; }
 
 .form-row[ico] {
   position: relative;
-  margin: .3rem 0; }
+  margin: .3rem 0;
+  display: inline-block; }
   .form-row[ico]:before {
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 0.625rem;
+    line-height: 2.75rem;
     transition: 200ms ease-in-out color;
     color: rgba(0, 0, 0, 0.2); }
   .form-row[ico] input {

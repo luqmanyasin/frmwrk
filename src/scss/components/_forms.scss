@@ -1,26 +1,27 @@
 input[type=text], input[type=email], input[type=password], textarea {
     background-color: #ffffff;
-    padding: 8px 12px;
-    border: 1px solid transparent;
-    box-shadow: 0 1px 3px 0 #e6ebf1;
+    padding: rem(12) rem(13) rem(12);
+    border: rem(1) solid transparent;
+    box-shadow: 0 rem(1) rem(3) 0 #e6ebf1;
     transition: box-shadow 150ms ease;
     outline: none;
     font-size: .9rem;
     box-sizing: border-box;
-    min-width: 212px;
-    margin: .3rem 0;
+    min-width: rem(212);
+    margin: .3rem .3rem 0 0;
     &:focus {
-        box-shadow: 0 1px 3px 0 #cfd7df;
+        box-shadow: 0 rem(1) rem(3) 0 #cfd7df;
     }
 }
 
 .form-row[ico] {
     position: relative;
     margin: .3rem 0;
+    display: inline-block;
     &:before {
         position: absolute;
-        left: 10px;
-        top: 10px;
+        left: rem(10);
+        line-height: rem(44);
         transition: 200ms ease-in-out color;
         color: rgba(0, 0, 0, 0.2);
     }
