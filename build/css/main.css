@@ -61,7 +61,7 @@ h1, h2, h3, h4 {
     background: #ffffff;
     color: #6587c1; }
     .button--inverted:hover, .button--inverted:focus {
-      background: #f5f5f5; }
+      background: #f9f9f9; }
   .button--green {
     background: #65a168;
     box-shadow: 0 0.125rem 0.25rem rgba(101, 161, 104, 0.2), 0 0 0.125rem rgba(101, 161, 104, 0.2); }
@@ -71,7 +71,7 @@ h1, h2, h3, h4 {
     background: #a16565;
     box-shadow: 0 0.125rem 0.25rem rgba(161, 101, 101, 0.2), 0 0 0.125rem rgba(161, 101, 101, 0.2); }
     .button--red:hover, .button--red:focus {
-      background: #ad5959; }
+      background: #ad6c6c; }
 
 .card {
   background: #fdfdfd;
@@ -80,7 +80,41 @@ h1, h2, h3, h4 {
   margin-top: 1.5rem; }
   .card__title {
     margin-bottom: .2rem;
-    border-bottom: 0.09375rem solid rgba(0, 0, 0, 0.05); }
+    border-bottom: 0.09375rem solid rgba(0, 0, 0, 0.05);
+    padding-bottom: .8rem; }
+  .card--inverted {
+    background: #263446;
+    color: #f6f6f6; }
+    .card--inverted .card__title {
+      border-color: rgba(253, 253, 253, 0.1); }
+    .card--inverted .card--table__row {
+      border-color: rgba(253, 253, 253, 0.1); }
+      .card--inverted .card--table__row.head {
+        border-color: rgba(253, 253, 253, 0.1); }
+  .card--table {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+    .card--table__row {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.05); }
+      .card--table__row:last-of-type {
+        border: 0; }
+      .card--table__row.head {
+        border-bottom: 0.09375rem solid rgba(0, 0, 0, 0.05); }
+        .card--table__row.head > div {
+          display: block;
+          margin: 0 0 .2rem;
+          text-align: left;
+          font-weight: 700;
+          padding: 0 0 .8rem;
+          text-transform: uppercase;
+          letter-spacing: 0.125rem; }
+      .card--table__row > div {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin: .5rem 0; }
 
 input[type=text], input[type=email], input[type=password], textarea {
   background-color: #ffffff;

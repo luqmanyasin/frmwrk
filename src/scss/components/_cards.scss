@@ -1,11 +1,63 @@
 .card {
     background: #fdfdfd;
     padding: 1.5rem 1.5rem;
-    box-shadow: 0 rem(2) rem(4) rgba(50, 50, 93, 0.1), 0 0 rem(2) rgba(95, 151, 206, 0.1);
+    box-shadow: 0 rem(2) rem(4) rgba(50, 50, 93, .1), 0 0 rem(2) rgba(95, 151, 206, .1);
     margin-top: 1.5rem;
 
     &__title {
         margin-bottom: .2rem;
-        border-bottom: rem(1.5) solid rgba(0, 0, 0, 0.05);
+        border-bottom: rem(1.5) solid rgba(0, 0, 0, .05);
+        padding-bottom: .8rem;
+    }
+
+    &--inverted {
+        background: #263446;
+        color: #f6f6f6;
+
+        .card__title {
+            border-color: rgba(253, 253, 253, .1);
+        }
+
+        .card--table__row {
+            border-color: rgba(253, 253, 253, .1);
+            &.head {
+                border-color: rgba(253, 253, 253, .1);
+            }
+        }
+    }
+
+    &--table {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        &__row {
+            display: flex;
+            flex-direction: row;
+            border-bottom: rem(1) solid rgba(0, 0, 0, 0.05);
+
+            &:last-of-type {
+                border: 0;
+            }
+
+            &.head {
+                border-bottom: rem(1.5) solid rgba(0, 0, 0, 0.05);
+                > div {
+                    display: block;
+                    margin: 0 0 .2rem;
+                    text-align: left;
+                    font-weight: 700;
+                    padding: 0 0 .8rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.125rem;
+                }
+            }
+
+            > div {
+                flex-grow: 1;
+                flex-basis: 0;
+                margin: .5rem 0;
+            }
+        }
     }
 }
