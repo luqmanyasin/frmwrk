@@ -47,6 +47,9 @@ h1, h2, h3, h4 {
     @media screen and (max-width: rem(950)) {
         padding: 0 1rem;
     }
+    > h4 {
+        margin: 1rem 0;
+    }
 }
 
 @import "components/components";
