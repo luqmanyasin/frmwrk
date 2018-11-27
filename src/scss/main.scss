@@ -37,13 +37,16 @@ h1, h2, h3, h4 {
     width: auto;
     color: #f6f6f6;
     display: inline-block;
-    background: #263446;
+    background: #5E86B3;
     width: rem(117);
 }
 
 .container {
-    width: rem(950);
+    max-width: rem(950);
     margin: 0 auto;
+    @media screen and (max-width: rem(950)) {
+        padding: 0 1rem;
+    }
 }
 
 @import "components/components";

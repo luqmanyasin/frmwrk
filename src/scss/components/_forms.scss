@@ -8,7 +8,7 @@ input[type=text], input[type=email], input[type=password], textarea {
     font-size: .9rem;
     box-sizing: border-box;
     min-width: rem(212);
-    margin: .3rem .3rem 0 0;
+    margin: .3rem 0 .3rem .3rem;
     &:focus {
         box-shadow: 0 rem(1) rem(3) 0 #cfd7df;
         border-color: #0080ff;
@@ -17,7 +17,7 @@ input[type=text], input[type=email], input[type=password], textarea {
 
 .form-row[ico] {
     position: relative;
-    margin: .3rem 0;
+    margin: .3rem 0 .3rem .3rem;
     display: inline-block;
     &:before {
         position: absolute;
