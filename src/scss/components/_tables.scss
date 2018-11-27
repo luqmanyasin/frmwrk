@@ -1,0 +1,41 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 1.5rem 0;
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        border-bottom: rem(1) solid rgba(0, 0, 0, .05);
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        > div {
+            flex-grow: 1;
+            flex-basis: 0;
+            padding: .5rem 1rem;
+            border-right: rem(1) solid rgba(0, 0, 0, .05);
+
+            &:last-of-type {
+                border-right: none;
+            }
+        }
+
+        &.head {
+            > div {
+                display: block;
+                text-align: left;
+                font-weight: 700;
+                padding: .5rem 1rem .7rem;
+                text-transform: uppercase;
+                letter-spacing: 0.125rem;
+            }
+        }
+
+    }
+}

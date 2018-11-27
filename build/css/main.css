@@ -81,7 +81,7 @@ h1, h2, h3, h4 {
   background: #fdfdfd;
   padding: 1.5rem 1.5rem;
   box-shadow: 0 0.125rem 0.25rem rgba(50, 50, 93, 0.1), 0 0 0.125rem rgba(95, 151, 206, 0.1);
-  margin-top: 1.5rem; }
+  margin: 1.5rem 0; }
   .card__title {
     margin-bottom: .2rem;
     border-bottom: 0.09375rem solid rgba(0, 0, 0, 0.05);
@@ -150,3 +150,31 @@ input[type=text], input[type=email], input[type=password], textarea {
     margin: 0; }
   .form-row[ico]:focus-within:before {
     color: rgba(0, 128, 255, 0.7); }
+
+.table {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 1.5rem 0; }
+  .table__row {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.05); }
+    .table__row:last-of-type {
+      border-bottom: none; }
+    .table__row > div {
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: .5rem 1rem;
+      border-right: 0.0625rem solid rgba(0, 0, 0, 0.05); }
+      .table__row > div:last-of-type {
+        border-right: none; }
+    .table__row.head > div {
+      display: block;
+      text-align: left;
+      font-weight: 700;
+      padding: .5rem 1rem .7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.125rem; }
