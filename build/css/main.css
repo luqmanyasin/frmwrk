@@ -41,6 +41,23 @@ h1, h2, h3, h4, h5 {
   .container > h4 {
     margin: 1rem 0; }
 
+/**
+ * Demo form styling with 50/50 top row and full width textarea
+ */
+form.demo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  form.demo .form-row {
+    margin-right: -.3rem; }
+  form.demo *:not(textarea) {
+    flex-grow: 1; }
+  form.demo textarea {
+    max-width: 100%;
+    min-width: 100%; }
+
 .button {
   background: #5978ad;
   box-shadow: 0 0.125rem 0.25rem rgba(89, 120, 173, 0.2), 0 0 0.125rem rgba(89, 120, 173, 0.2);
@@ -155,7 +172,8 @@ textarea {
     color: rgba(0, 0, 0, 0.2); }
   .form-row[ico] input {
     padding-left: 2rem;
-    margin: 0; }
+    margin: 0;
+    width: 100%; }
   .form-row[ico]:focus-within:before {
     color: rgba(0, 128, 255, 0.7); }
 

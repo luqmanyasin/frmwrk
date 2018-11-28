@@ -52,5 +52,27 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+/**
+ * Demo form styling with 50/50 top row and full width textarea
+ */
+form.demo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .form-row {
+        margin-right: -.3rem
+    }
+    *:not(textarea) {
+        flex-grow: 1;
+    }
+
+    textarea {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
 @import "components/components";
 @import "../lib/libs"
