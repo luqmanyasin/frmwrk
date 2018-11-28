@@ -14,6 +14,12 @@ input[type=text], input[type=email], input[type=password], textarea {
         border-color: #0080ff;
     }
 }
+textarea {
+    display: block;
+    max-width: rem(434);
+    min-width: rem(434);
+    min-height: rem(120);
+}
 
 .form-row[ico] {
     position: relative;

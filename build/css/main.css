@@ -137,6 +137,12 @@ input[type=text], input[type=email], input[type=password], textarea {
     box-shadow: 0 0.0625rem 0.1875rem 0 #cfd7df;
     border-color: #0080ff; }
 
+textarea {
+  display: block;
+  max-width: 27.125rem;
+  min-width: 27.125rem;
+  min-height: 7.5rem; }
+
 .form-row[ico] {
   position: relative;
   margin: .3rem 0 .3rem .3rem;
