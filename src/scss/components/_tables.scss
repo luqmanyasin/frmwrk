@@ -27,6 +27,7 @@
             flex-basis: 0;
             padding: .7rem 1rem;
             border-right: rem(1) solid rgba(0, 0, 0, .05);
+            word-break: break-all;
 
             &:last-of-type {
                 border-right: none;
@@ -43,6 +44,9 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 0.125rem;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
         }
     }

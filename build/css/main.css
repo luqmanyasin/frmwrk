@@ -202,7 +202,8 @@ textarea {
       flex-grow: 1;
       flex-basis: 0;
       padding: .7rem 1rem;
-      border-right: 0.0625rem solid rgba(0, 0, 0, 0.05); }
+      border-right: 0.0625rem solid rgba(0, 0, 0, 0.05);
+      word-break: break-all; }
       .table__row > div:last-of-type {
         border-right: none; }
     .table__row.head {
@@ -213,7 +214,10 @@ textarea {
         text-align: left;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.125rem; }
+        letter-spacing: 0.125rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
   .table--inverted {
     background: #263446;
     color: #f6f6f6; }
