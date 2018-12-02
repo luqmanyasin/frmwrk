@@ -68,4 +68,31 @@
         }
 
     }
+    /**
+     * Responsive Table View
+     */
+    @media screen and (max-width: 600px) {
+        &__row {
+            flex-direction: column;
+            &.head {
+                box-shadow: none;
+                display: none;
+            }
+
+            > div {
+                &::before {
+                    display: inline-block;
+                    width: 50%;
+                    box-sizing: border-box;
+                    content: attr(data-title);
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.125rem;
+                }
+                border-right: none;
+                border-bottom: rem(1) solid rgba(0, 0, 0, .05);
+
+            }
+        }
+    }
 }

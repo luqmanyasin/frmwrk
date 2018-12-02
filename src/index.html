@@ -146,6 +146,36 @@
             </div>
 
     </div>
+    <script>
+    /**
+    * General Use forEach function to iterate through nodelists efficiently
+    */
+    var forEach = function (array, callback, scope) {
+    for (var i = 0; i < array.length; i++) {
+        callback.call(scope, i, array[i]);
+    }
+    };
+
+    /**
+    * Iterate through tables and set data-title for responsive table view.
+    */
+    var tables = document.querySelectorAll('.table');
+    var titleStore = [];
+    forEach (tables, function(index, table) {
+        var headings = [];
+        forEach(table.children[0].children, function(index, value) {
+            headings.push(value.innerHTML);
+        });
+
+        forEach(table.children, function(index, row) {
+            if (index > 0) {
+                forEach(row.children, function(index, field) {
+                    field.setAttribute('data-title', headings[index]);
+                });
+            }
+        });
+    });
+    </script>
 
   </body>
 </html>

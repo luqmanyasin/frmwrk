@@ -186,7 +186,10 @@ textarea {
   margin: 1.5rem .3rem;
   border: 0.0625rem solid rgba(0, 0, 0, 0.05);
   background: #fdfdfd;
-  box-shadow: 0 0.125rem 0.25rem rgba(50, 50, 93, 0.1), 0 0 0.125rem rgba(95, 151, 206, 0.1); }
+  box-shadow: 0 0.125rem 0.25rem rgba(50, 50, 93, 0.1), 0 0 0.125rem rgba(95, 151, 206, 0.1);
+  /**
+     * Responsive Table View
+     */ }
   .table__row {
     display: flex;
     flex-direction: row;
@@ -223,3 +226,20 @@ textarea {
         box-shadow: 0 0.1rem 0rem rgba(255, 255, 255, 0.15); }
       .table--inverted .table__row > div {
         border-right-color: rgba(255, 255, 255, 0.05); }
+  @media screen and (max-width: 600px) {
+    .table__row {
+      flex-direction: column; }
+      .table__row.head {
+        box-shadow: none;
+        display: none; }
+      .table__row > div {
+        border-right: none;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.05); }
+        .table__row > div::before {
+          display: inline-block;
+          width: 50%;
+          box-sizing: border-box;
+          content: attr(data-title);
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.125rem; } }
