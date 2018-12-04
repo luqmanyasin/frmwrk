@@ -237,13 +237,22 @@ textarea {
         box-shadow: none;
         display: none; }
       .table__row > div {
+        flex: unset;
+        display: flex;
+        flex-direction: row;
         border-right: none;
         border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.05); }
+        .table__row > div > span {
+          flex-grow: 1;
+          flex-basis: 0; }
         .table__row > div::before {
-          display: inline-block;
+          display: block;
+          flex-grow: 1;
+          flex-basis: 0;
           width: 50%;
           box-sizing: border-box;
           content: attr(data-title);
           font-weight: 700;
           text-transform: uppercase;
-          letter-spacing: 0.125rem; } }
+          letter-spacing: 0.125rem;
+          margin-right: 1rem; } }

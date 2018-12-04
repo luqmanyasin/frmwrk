@@ -160,6 +160,11 @@
         forEach(table.children, function(index, row) {
             if (index > 0) {
                 forEach(row.children, function(index, field) {
+                    var fieldSpan = document.createElement('span');
+                    fieldSpan.append(field.innerHTML);
+                    field.removeChild(field.lastChild);
+                    field.appendChild(fieldSpan);
+
                     field.setAttribute('data-title', headings[index]);
                 });
             }

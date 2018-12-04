@@ -84,14 +84,24 @@
             }
 
             > div {
+                flex: unset;
+                display: flex;
+                flex-direction: row;
+                > span {
+                    flex-grow: 1;
+                    flex-basis: 0;
+                }
                 &::before {
-                    display: inline-block;
+                    display: block;
+                    flex-grow: 1;
+                    flex-basis: 0;
                     width: 50%;
                     box-sizing: border-box;
                     content: attr(data-title);
                     font-weight: 700;
                     text-transform: uppercase;
                     letter-spacing: 0.125rem;
+                    margin-right: 1rem;
                 }
                 border-right: none;
                 border-bottom: rem(1) solid rgba(0, 0, 0, .05);
