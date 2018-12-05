@@ -182,7 +182,7 @@ textarea {
   flex-direction: column;
   flex-wrap: nowrap;
   box-sizing: border-box;
-  width: 100%;
+  max-width: 100%;
   margin: 1.5rem .3rem;
   border: 0.0625rem solid rgba(0, 0, 0, 0.05);
   background: #fdfdfd;
