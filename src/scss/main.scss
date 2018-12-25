@@ -85,6 +85,14 @@ h1, h2, h3, h4, h5 {
         min-width: unset;
     }
 }
+.nav {
+    margin: 1rem 0 0;
+    &__logo {
+        .frmwrk {
+            margin: 0;
+        }
+    }
+}
 
 @import "components/components";
 @import "../lib/libs"
