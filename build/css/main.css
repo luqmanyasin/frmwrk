@@ -34,7 +34,8 @@ h1, h2, h3, h4, h5 {
 
 .container {
   max-width: 59.375rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 .3rem; }
   @media screen and (max-width: 59.375rem) {
     .container {
       padding: 0 1rem; } }
@@ -44,19 +45,23 @@ h1, h2, h3, h4, h5 {
 /**
  * Demo form styling with 50/50 top row and full width textarea
  */
-form.demo {
-  width: 100%;
+.demo {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between; }
-  form.demo .form-row {
-    margin-right: -.3rem; }
-  form.demo *:not(textarea) {
+  padding: 0 .3rem; }
+  .demo *:not(textarea) {
     flex-grow: 1; }
-  form.demo textarea {
-    max-width: 100%;
-    min-width: 100%; }
+  .demo__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap; }
+    .demo__row .form-row[ico] {
+      margin: .3rem 0 .3rem .3rem; }
+  .demo textarea {
+    max-width: unset;
+    min-width: unset; }
 
 .button {
   background: #5978ad;
@@ -100,7 +105,7 @@ form.demo {
   background: #fdfdfd;
   padding: 1.5rem 1.5rem;
   box-shadow: 0 0.125rem 0.25rem rgba(50, 50, 93, 0.1), 0 0 0.125rem rgba(95, 151, 206, 0.1);
-  margin: 1.5rem .3rem; }
+  margin: 1.5rem 0rem; }
   .card__title {
     margin-bottom: .2rem;
     border-bottom: 0.09375rem solid rgba(0, 0, 0, 0.05);
@@ -149,7 +154,7 @@ input[type=text], input[type=email], input[type=password], textarea {
   font-size: .9rem;
   box-sizing: border-box;
   min-width: 13.25rem;
-  margin: .3rem 0 .3rem .3rem; }
+  margin: .3rem 0; }
   input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
     box-shadow: 0 0.0625rem 0.1875rem 0 #cfd7df;
     border-color: #0080ff; }
@@ -162,7 +167,7 @@ textarea {
 
 .form-row[ico] {
   position: relative;
-  margin: .3rem 0 .3rem .3rem;
+  margin: .3rem 0;
   display: inline-block; }
   .form-row[ico]:before {
     position: absolute;
@@ -183,7 +188,7 @@ textarea {
   flex-wrap: nowrap;
   box-sizing: border-box;
   max-width: 100%;
-  margin: 1.5rem .3rem;
+  margin: 1.5rem 0rem;
   border: 0.0625rem solid rgba(0, 0, 0, 0.05);
   background: #fdfdfd;
   box-shadow: 0 0.125rem 0.25rem rgba(50, 50, 93, 0.1), 0 0 0.125rem rgba(95, 151, 206, 0.1);

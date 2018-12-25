@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5 {
 .container {
     max-width: rem(950);
     margin: 0 auto;
+    padding: 0 .3rem;
     @media screen and (max-width: rem(950)) {
         padding: 0 1rem;
     }
@@ -55,22 +56,27 @@ h1, h2, h3, h4, h5 {
 /**
  * Demo form styling with 50/50 top row and full width textarea
  */
-form.demo {
-    width: 100%;
+.demo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    .form-row {
-        margin-right: -.3rem
-    }
+    padding: 0 .3rem;
     *:not(textarea) {
         flex-grow: 1;
     }
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        .form-row[ico] {
+            margin: .3rem 0 .3rem .3rem;
+        }
+    }
 
     textarea {
-        max-width: 100%;
-        min-width: 100%;
+        max-width: unset;
+        min-width: unset;
     }
 }
 
