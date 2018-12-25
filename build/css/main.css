@@ -59,6 +59,11 @@ h1, h2, h3, h4, h5 {
     flex-wrap: nowrap; }
     .demo__row .form-row[ico] {
       margin: .3rem 0 .3rem .3rem; }
+    @media screen and (max-width: 59.375rem) {
+      .demo__row {
+        flex-direction: column; }
+        .demo__row .form-row[ico] {
+          margin: 0; } }
   .demo textarea {
     max-width: unset;
     min-width: unset; }

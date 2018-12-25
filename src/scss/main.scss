@@ -72,6 +72,12 @@ h1, h2, h3, h4, h5 {
         .form-row[ico] {
             margin: .3rem 0 .3rem .3rem;
         }
+        @media screen and (max-width: rem(950)) {
+            flex-direction: column;
+            .form-row[ico] {
+                margin: 0;
+            }
+        }
     }
 
     textarea {
