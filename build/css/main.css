@@ -246,7 +246,7 @@ textarea {
         box-shadow: 0 0.1rem 0rem rgba(255, 255, 255, 0.15); }
       .table--inverted .table__row > div {
         border-right-color: rgba(255, 255, 255, 0.05); }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5rem) {
     .table__row {
       flex-direction: column; }
       .table__row.head {
@@ -294,3 +294,16 @@ textarea {
       justify-self: flex-start;
       margin-right: auto;
       cursor: default; }
+  @media screen and (max-width: 37.5rem) {
+    .nav {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .nav a {
+        padding: .8rem 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 0.09375rem solid rgba(0, 0, 0, 0.05); }
+        .nav a.nav__logo {
+          margin-right: 1rem;
+          justify-self: unset; } }

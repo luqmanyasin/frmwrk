@@ -23,4 +23,19 @@
             cursor: default;
         }
     }
+    @media screen and (max-width: rem(600)) {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            padding: .8rem 0;
+            width: 100%;
+            text-align: center;
+            border-bottom: rem(1.5) solid rgba(0, 0, 0, .05);
+            &.nav__logo {
+                margin-right: 1rem;
+                justify-self: unset;
+            }
+        }
+    }
 }

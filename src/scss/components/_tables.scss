@@ -75,7 +75,7 @@
     /**
      * Responsive Table View
      */
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: rem(600)) {
         &__row {
             flex-direction: column;
             &.head {
