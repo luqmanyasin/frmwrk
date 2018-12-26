@@ -48,4 +48,15 @@
             background: #ad6c6c;
         }
     }
+
+    &--text {
+        background: unset;
+        color: #6587c1;
+        box-shadow: unset;
+        &:hover, &:focus {
+            background: unset;
+            box-shadow: unset;
+            color: #789fe2;
+        }
+    }
 }

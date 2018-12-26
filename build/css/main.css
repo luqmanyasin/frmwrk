@@ -110,6 +110,14 @@ h1, h2, h3, h4, h5 {
     box-shadow: 0 0.125rem 0.25rem rgba(161, 101, 101, 0.2), 0 0 0.125rem rgba(161, 101, 101, 0.2); }
     .button--red:hover, .button--red:focus {
       background: #ad6c6c; }
+  .button--text {
+    background: unset;
+    color: #6587c1;
+    box-shadow: unset; }
+    .button--text:hover, .button--text:focus {
+      background: unset;
+      box-shadow: unset;
+      color: #789fe2; }
 
 .card {
   background: #fdfdfd;
