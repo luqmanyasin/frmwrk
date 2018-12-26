@@ -30,12 +30,13 @@ h1, h2, h3, h4, h5 {
   color: #f6f6f6;
   display: inline-block;
   background: #5E86B3;
-  width: 7.3125rem; }
+  width: 7.3125rem;
+  font-size: 2em; }
 
 .container {
   max-width: 59.375rem;
   margin: 0 auto;
-  padding: 0 .3rem; }
+  padding: 0 .3rem 3rem; }
   @media screen and (max-width: 59.375rem) {
     .container {
       padding: 0 1rem; } }
@@ -72,6 +73,10 @@ h1, h2, h3, h4, h5 {
   margin: 1rem 0 0; }
   .nav__logo .frmwrk {
     margin: 0; }
+
+h4.head {
+  padding-top: 5.0625rem;
+  margin-top: -4.0625rem; }
 
 .button {
   background: #5978ad;
@@ -285,13 +290,17 @@ textarea {
   padding: 1rem 0;
   width: 100%;
   position: relative;
-  z-index: 10;
+  z-index: 1;
   background: #ffffff;
   box-shadow: 0 0.0625rem 0.1875rem 0 #e6ebf1;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center; }
+  .nav--sticky {
+    position: sticky;
+    top: .2rem;
+    z-index: 2; }
   .nav a {
     margin: 0 1rem;
     text-decoration: none;
@@ -302,11 +311,16 @@ textarea {
       justify-self: flex-start;
       margin-right: auto;
       cursor: default; }
+      .nav a.nav__logo h1:not(.frmwrk) {
+        font-size: 1.6em; }
+      .nav a.nav__logo:hover {
+        color: unset; }
   @media screen and (max-width: 37.5rem) {
     .nav {
       flex-direction: column;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      position: relative; }
       .nav a {
         padding: .8rem 0;
         width: 100%;

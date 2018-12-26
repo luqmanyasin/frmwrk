@@ -2,7 +2,7 @@
     padding: rem(16) 0;
     width: 100%;
     position: relative;
-    z-index: 10;
+    z-index: 1;
     background: #ffffff;
     box-shadow: 0 rem(1) rem(3) 0 #e6ebf1;
 
@@ -10,6 +10,11 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    &--sticky {
+        position: sticky;
+        top: .2rem;
+        z-index: 2;
+    }
     a {
         margin: 0 1rem;
         text-decoration: none;
@@ -21,12 +26,19 @@
             justify-self: flex-start;
             margin-right: auto;
             cursor: default;
+            h1:not(.frmwrk) {
+                font-size: 1.6em;
+            }
+            &:hover {
+                color: unset;
+            }
         }
     }
     @media screen and (max-width: rem(600)) {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        position: relative;
         a {
             padding: .8rem 0;
             width: 100%;

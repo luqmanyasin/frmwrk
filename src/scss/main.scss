@@ -39,12 +39,13 @@ h1, h2, h3, h4, h5 {
     display: inline-block;
     background: #5E86B3;
     width: rem(117);
+    font-size: 2em;
 }
 
 .container {
     max-width: rem(950);
     margin: 0 auto;
-    padding: 0 .3rem;
+    padding: 0 .3rem 3rem;
     @media screen and (max-width: rem(950)) {
         padding: 0 1rem;
     }
@@ -92,6 +93,10 @@ h1, h2, h3, h4, h5 {
             margin: 0;
         }
     }
+}
+h4.head {
+    padding-top: rem(81);
+    margin-top: rem(-65);
 }
 
 @import "components/components";
