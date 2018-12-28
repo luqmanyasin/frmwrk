@@ -292,7 +292,8 @@ textarea {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center; }
+        align-items: center;
+        padding: .8rem 1.2rem; }
         .nav label:before {
           position: relative;
           height: 0.125rem;
