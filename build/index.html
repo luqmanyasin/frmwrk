@@ -175,39 +175,59 @@
             </section>
     </div>
     <script>
-    /**
-    * General Use forEach function to iterate through nodelists efficiently
-    */
-    var forEach = function (array, callback, scope) {
-        for (var i = 0; i < array.length; i++) {
-            callback.call(scope, i, array[i]);
-        }
-    };
+        var Fr = function() {
+            var self;
 
-    /**
-    * Iterate through tables and set data-title for responsive table view.
-    */
-    var tables = document.querySelectorAll('.table');
-    var titleStore = [];
-    forEach (tables, function(index, table) {
-        var headings = [];
-        forEach(table.children[0].children, function(index, value) {
-            headings.push(value.innerHTML);
-        });
-
-        forEach(table.children, function(index, row) {
-            if (index > 0) {
-                forEach(row.children, function(index, field) {
-                    var fieldSpan = document.createElement('span');
-                    fieldSpan.append(field.innerHTML);
-                    field.removeChild(field.lastChild);
-                    field.appendChild(fieldSpan);
-
-                    field.setAttribute('data-title', headings[index]);
-                });
+            function Fr() {
+                self = this;
             }
-        });
-    });
+
+            Fr.prototype.init = function() {
+                return new Fr();
+            };
+
+            /**
+             * General Use forEach function to iterate through nodelists efficiently
+             */
+            Fr.prototype.forEach = function (array, callback, scope) {
+                for (var i = 0; i < array.length; i++) {
+                    callback.call(scope, i, array[i]);
+                }
+            };
+
+
+            /**
+             * Iterate through tables and set data-title for responsive table view.
+             */
+            Fr.prototype.collapsibleTable = function(selector) {
+                var tables = document.querySelectorAll(selector);
+                var titleStore = [];
+                self.forEach(tables, function(index, table) {
+                    var headings = [];
+                    self.forEach(table.children[0].children, function(index, value) {
+                        headings.push(value.innerHTML);
+                    });
+
+                    self.forEach(table.children, function(index, row) {
+                        if (index > 0) {
+                            self.forEach(row.children, function(index, field) {
+                                var fieldSpan = document.createElement('span');
+                                fieldSpan.append(field.innerHTML);
+                                field.removeChild(field.lastChild);
+                                field.appendChild(fieldSpan);
+
+                                field.setAttribute('data-title', headings[index]);
+                            });
+                        }
+                    });
+                });
+            };
+
+            return Fr;
+        }
+        var fr = Fr().prototype.init();
+
+        fr.collapsibleTable('.table');
     </script>
 
   </body>
