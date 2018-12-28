@@ -276,8 +276,9 @@ textarea {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      position: relative;
       padding: 0; }
+      .nav--sticky {
+        position: fixed; }
       .nav a, .nav label {
         padding: .8rem 0;
         width: 100%;
