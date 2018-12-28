@@ -33,6 +33,9 @@
                 color: unset;
             }
         }
+        &:last-child {
+            margin: 0 2rem 0 1rem;
+        }
     }
     @media screen and (max-width: rem(600)) {
         flex-direction: column;
