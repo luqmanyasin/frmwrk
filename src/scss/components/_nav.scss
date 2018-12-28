@@ -56,6 +56,9 @@
 
         &--sticky {
             position: fixed;
+            left: 1rem;
+            right: 1rem;
+            width: unset;
         }
 
         padding: 0;

@@ -278,7 +278,10 @@ textarea {
       align-items: center;
       padding: 0; }
       .nav--sticky {
-        position: fixed; }
+        position: fixed;
+        left: 1rem;
+        right: 1rem;
+        width: unset; }
       .nav a, .nav label {
         padding: .8rem 0;
         width: 100%;
