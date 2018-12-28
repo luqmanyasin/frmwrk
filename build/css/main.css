@@ -253,36 +253,58 @@ textarea {
     position: sticky;
     top: .2rem;
     z-index: 2; }
-  .nav a {
+  .nav a, .nav label {
     margin: 0 1rem;
     text-decoration: none;
     color: #263446; }
-    .nav a:hover {
+    .nav a:hover, .nav label:hover {
       color: #0080ff; }
-    .nav a.nav__logo {
+    .nav a.nav__logo, .nav label.nav__logo {
       justify-self: flex-start;
       margin-right: auto;
       cursor: default; }
-      .nav a.nav__logo h1:not(.frmwrk) {
+      .nav a.nav__logo h1:not(.frmwrk), .nav label.nav__logo h1:not(.frmwrk) {
         font-size: 1.6em; }
-      .nav a.nav__logo:hover {
+      .nav a.nav__logo:hover, .nav label.nav__logo:hover {
         color: unset; }
-    .nav a:last-child {
+    .nav a:last-child, .nav label:last-child {
       margin: 0 2rem 0 1rem; }
+  .nav input[type=checkbox] {
+    display: none; }
   @media screen and (max-width: 37.5rem) {
     .nav {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      position: relative; }
-      .nav a {
+      position: relative;
+      padding: 0; }
+      .nav a, .nav label {
         padding: .8rem 0;
         width: 100%;
         text-align: center;
         border-bottom: 0.09375rem solid rgba(0, 0, 0, 0.05); }
-        .nav a.nav__logo {
+        .nav a.nav__logo, .nav label.nav__logo {
           margin-right: 1rem;
-          justify-self: unset; } }
+          justify-self: unset; }
+      .nav a {
+        display: none; }
+      .nav label {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .nav label:before {
+          position: relative;
+          height: 0.125rem;
+          width: 1.25rem;
+          content: '';
+          background: #333;
+          box-shadow: 0 -0.3125rem 0 0 #333, 0 -0.625rem 0 0 #333;
+          margin-top: 0.625rem; }
+      .nav input[type=checkbox]:checked ~ a {
+        display: block; }
+      .nav input[type=checkbox] + label {
+        cursor: pointer; } }
 
 .hero {
   position: relative;
