@@ -1,0 +1,26 @@
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 5rem 0;
+    background: #263446;
+    color: #f6f6f6;
+    &:before {
+        position: absolute;
+        display: block;
+
+        width: 100vw;
+        height: 100%;
+        background: inherit;
+        content: ' ';
+        z-index: 0;
+    }
+
+    > * {
+        z-index: 1;
+    }
+}

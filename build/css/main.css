@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5 {
 .container {
   max-width: 59.375rem;
   margin: 0 auto;
-  padding: 0 .3rem 3rem; }
+  padding: 1rem .3rem 3rem; }
   @media screen and (max-width: 59.375rem) {
     .container {
       padding: 0 1rem; } }
@@ -68,14 +68,16 @@ h1, h2, h3, h4, h5 {
     max-width: unset;
     min-width: unset; }
 
-.nav {
-  margin: 1rem 0 0; }
-  .nav__logo .frmwrk {
-    margin: 0; }
+.nav__logo .frmwrk {
+  margin: 0; }
 
 h4.head {
   padding-top: 5.0625rem;
   margin-top: -4.0625rem; }
+
+.hero.hero--demo:before {
+  bottom: 0;
+  height: calc(100% + 6rem); }
 
 .button {
   background: #5978ad;
@@ -330,3 +332,24 @@ textarea {
         .nav a.nav__logo {
           margin-right: 1rem;
           justify-self: unset; } }
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5rem 0;
+  background: #263446;
+  color: #f6f6f6; }
+  .hero:before {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100%;
+    background: inherit;
+    content: ' ';
+    z-index: 0; }
+  .hero > * {
+    z-index: 1; }

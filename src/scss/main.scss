@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5 {
 .container {
     max-width: rem(950);
     margin: 0 auto;
-    padding: 0 .3rem 3rem;
+    padding: 1rem .3rem 3rem;
     @media screen and (max-width: rem(950)) {
         padding: 0 1rem;
     }
@@ -86,7 +86,6 @@ h1, h2, h3, h4, h5 {
     }
 }
 .nav {
-    margin: 1rem 0 0;
     &__logo {
         .frmwrk {
             margin: 0;
@@ -96,6 +95,15 @@ h1, h2, h3, h4, h5 {
 h4.head {
     padding-top: rem(81);
     margin-top: rem(-65);
+}
+.hero {
+    &.hero--demo {
+        &:before {
+            bottom: 0;
+            height: calc(100% + 6rem);
+        }
+
+    }
 }
 
 @import "components/components";
