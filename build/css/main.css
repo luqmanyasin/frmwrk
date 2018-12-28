@@ -199,7 +199,8 @@ textarea {
     left: 0.625rem;
     line-height: 2.75rem;
     transition: 200ms ease-in-out color;
-    color: rgba(0, 0, 0, 0.2); }
+    color: rgba(0, 0, 0, 0.2);
+    pointer-events: none; }
   .form-row[ico] input {
     padding-left: 2rem;
     margin: 0;

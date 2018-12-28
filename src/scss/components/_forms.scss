@@ -31,6 +31,7 @@ textarea {
         line-height: rem(44);
         transition: 200ms ease-in-out color;
         color: rgba(0, 0, 0, 0.2);
+        pointer-events: none;
     }
     input {
         padding-left: 2rem;
