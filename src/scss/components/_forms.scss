@@ -25,6 +25,7 @@ textarea {
     position: relative;
     margin: .3rem 0;
     display: inline-block;
+
     &:before {
         position: absolute;
         left: rem(10);
@@ -33,15 +34,17 @@ textarea {
         color: rgba(0, 0, 0, 0.2);
         pointer-events: none;
     }
+
     input {
         padding-left: 2rem;
         margin: 0;
         width: 100%;
     }
+
     &:focus-within {
+
         &:before {
             color: rgba(0, 128, 255, 0.7);
         }
-
     }
 }

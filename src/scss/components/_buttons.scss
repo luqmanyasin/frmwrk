@@ -13,6 +13,7 @@
     transition: background .2s, box-shadow .2s, color .2s;
     display: inline-block;
     cursor: pointer;
+
     &:hover, &:focus {
         background: #6587c1;
     }
@@ -20,6 +21,7 @@
     &--dark {
         background: #30404f;
         box-shadow: 0 rem(2) rem(4) rgba(48, 64, 79, 0.2), 0 0 rem(2) rgba(48, 64, 79, 0.2);
+
         &:hover, &:focus {
             background: #38526f;
         }
@@ -28,6 +30,7 @@
     &--inverted {
         background: #ffffff;
         color: #6587c1;
+
         &:hover, &:focus {
             background: #f9f9f9;
         }
@@ -36,6 +39,7 @@
     &--green {
         background: #65a168;
         box-shadow: 0 rem(2) rem(4) rgba(101, 161, 104, 0.2), 0 0 rem(2) rgba(101, 161, 104, 0.2);
+
         &:hover, &:focus {
             background: #59ad6f;
         }
@@ -44,6 +48,7 @@
     &--red {
         background: #a16565;
         box-shadow: 0 rem(2) rem(4) rgba(161, 101, 101, 0.2), 0 0 rem(2) rgba(161, 101, 101, 0.2);
+
         &:hover, &:focus {
             background: #ad6c6c;
         }
@@ -53,6 +58,7 @@
         background: unset;
         color: #6587c1;
         box-shadow: unset;
+
         &:hover, &:focus {
             background: unset;
             box-shadow: unset;

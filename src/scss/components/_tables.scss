@@ -78,6 +78,7 @@
     @media screen and (max-width: rem(600)) {
         &__row {
             flex-direction: column;
+
             &.head {
                 box-shadow: none;
                 display: none;
@@ -87,10 +88,14 @@
                 flex: unset;
                 display: flex;
                 flex-direction: row;
+
+                border-right: none;
+                border-bottom: rem(1) solid rgba(0, 0, 0, .05);
                 > span {
                     flex-grow: 1;
                     flex-basis: 0;
                 }
+
                 &::before {
                     display: block;
                     flex-grow: 1;
@@ -103,9 +108,6 @@
                     letter-spacing: 0.125rem;
                     margin-right: 1rem;
                 }
-                border-right: none;
-                border-bottom: rem(1) solid rgba(0, 0, 0, .05);
-
             }
         }
     }

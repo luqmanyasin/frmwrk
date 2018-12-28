@@ -10,6 +10,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
     &--sticky {
         position: sticky;
         top: .2rem;
@@ -19,20 +20,25 @@
         margin: 0 1rem;
         text-decoration: none;
         color: #263446;
+
         &:hover {
             color: #0080ff;
         }
+
         &.nav__logo {
             justify-self: flex-start;
             margin-right: auto;
             cursor: default;
+
             h1:not(.frmwrk) {
                 font-size: 1.6em;
             }
+
             &:hover {
                 color: unset;
             }
         }
+
         &:last-child {
             margin: 0 2rem 0 1rem;
         }
@@ -42,11 +48,13 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
+
         a {
             padding: .8rem 0;
             width: 100%;
             text-align: center;
             border-bottom: rem(1.5) solid rgba(0, 0, 0, .05);
+
             &.nav__logo {
                 margin-right: 1rem;
                 justify-self: unset;

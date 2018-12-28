@@ -21,6 +21,19 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   letter-spacing: 0.125rem; }
 
+.container {
+  max-width: 59.375rem;
+  margin: 0 auto;
+  padding: 1rem .3rem 3rem; }
+  @media screen and (max-width: 59.375rem) {
+    .container {
+      padding: 0 1rem; } }
+  .container > h4 {
+    margin: 1rem 0; }
+
+/**
+ * Demo element styling
+ */
 .frmwrk {
   text-transform: lowercase;
   overflow: hidden;
@@ -33,19 +46,6 @@ h1, h2, h3, h4, h5 {
   width: 7.3125rem;
   font-size: 2em; }
 
-.container {
-  max-width: 59.375rem;
-  margin: 0 auto;
-  padding: 1rem .3rem 3rem; }
-  @media screen and (max-width: 59.375rem) {
-    .container {
-      padding: 0 1rem; } }
-  .container > h4 {
-    margin: 1rem 0; }
-
-/**
- * Demo form styling with 50/50 top row and full width textarea
- */
 .demo {
   display: flex;
   flex-direction: column;

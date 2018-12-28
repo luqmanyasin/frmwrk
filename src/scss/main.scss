@@ -29,6 +29,23 @@ h1, h2, h3, h4, h5 {
     letter-spacing: rem(2);
 }
 
+.container {
+    max-width: rem(950);
+    margin: 0 auto;
+    padding: 1rem .3rem 3rem;
+
+    @media screen and (max-width: rem(950)) {
+        padding: 0 1rem;
+    }
+
+    > h4 {
+        margin: 1rem 0;
+    }
+}
+
+/**
+ * Demo element styling
+ */
 .frmwrk {
     text-transform: lowercase;
     overflow: hidden;
@@ -42,21 +59,6 @@ h1, h2, h3, h4, h5 {
     font-size: 2em;
 }
 
-.container {
-    max-width: rem(950);
-    margin: 0 auto;
-    padding: 1rem .3rem 3rem;
-    @media screen and (max-width: rem(950)) {
-        padding: 0 1rem;
-    }
-    > h4 {
-        margin: 1rem 0;
-    }
-}
-
-/**
- * Demo form styling with 50/50 top row and full width textarea
- */
 .demo {
     display: flex;
     flex-direction: column;
@@ -85,6 +87,7 @@ h1, h2, h3, h4, h5 {
         min-width: unset;
     }
 }
+
 .nav {
     &__logo {
         .frmwrk {
@@ -92,10 +95,12 @@ h1, h2, h3, h4, h5 {
         }
     }
 }
+
 h4.head {
     padding-top: rem(81);
     margin-top: rem(-65);
 }
+
 .hero {
     &.hero--demo {
         &:before {

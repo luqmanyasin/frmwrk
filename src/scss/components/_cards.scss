@@ -20,6 +20,7 @@
 
         .card--table__row {
             border-color: rgba(253, 253, 253, .1);
+
             &.head {
                 border-color: rgba(253, 253, 253, .1);
             }
@@ -42,6 +43,7 @@
 
             &.head {
                 border-bottom: rem(1.5) solid rgba(0, 0, 0, 0.05);
+
                 > div {
                     display: block;
                     margin: 0 0 .2rem;
