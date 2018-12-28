@@ -91,7 +91,7 @@ h4.head {
   letter-spacing: 0.1875rem;
   text-transform: uppercase;
   text-decoration: none;
-  transition: .2s all;
+  transition: background .2s, box-shadow .2s, color .2s;
   display: inline-block;
   cursor: pointer; }
   .button:hover, .button:focus {
@@ -174,7 +174,7 @@ input[type=text], input[type=email], input[type=password], textarea {
   padding: 0.84375rem 0.8125rem;
   border: 0.0625rem solid transparent;
   box-shadow: 0 0.0625rem 0.1875rem 0 #e6ebf1;
-  transition: box-shadow 150ms ease, border 200ms ease;
+  transition: box-shadow 150ms ease, border-color 200ms ease;
   outline: none;
   font-size: .9rem;
   box-sizing: border-box;

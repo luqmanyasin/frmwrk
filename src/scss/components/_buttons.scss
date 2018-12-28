@@ -10,7 +10,7 @@
     letter-spacing: rem(3);
     text-transform: uppercase;
     text-decoration: none;
-    transition: .2s all;
+    transition: background .2s, box-shadow .2s, color .2s;
     display: inline-block;
     cursor: pointer;
     &:hover, &:focus {
