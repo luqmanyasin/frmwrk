@@ -28,56 +28,6 @@ h1, h2, h3, h4, h5 {
   @media screen and (max-width: 59.375rem) {
     .container {
       padding: 0 1rem; } }
-  .container > h4 {
-    margin: 1rem 0; }
-
-/**
- * Demo element styling
- */
-.frmwrk {
-  text-transform: lowercase;
-  overflow: hidden;
-  height: 1.9rem;
-  margin: 1rem 0;
-  width: auto;
-  color: #f6f6f6;
-  display: inline-block;
-  background: #5E86B3;
-  width: 7.3125rem;
-  font-size: 2em; }
-
-.demo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; }
-  .demo *:not(textarea) {
-    flex-grow: 1; }
-  .demo__row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap; }
-    .demo__row .form-row[ico] {
-      margin: .3rem 0 .3rem .3rem; }
-    @media screen and (max-width: 59.375rem) {
-      .demo__row {
-        flex-direction: column; }
-        .demo__row .form-row[ico] {
-          margin: 0; } }
-  .demo textarea {
-    max-width: unset;
-    min-width: unset; }
-
-.nav__logo .frmwrk {
-  margin: 0; }
-
-h4.head {
-  padding-top: 5.0625rem;
-  margin-top: -4.0625rem; }
-
-.hero.hero--demo:before {
-  bottom: 0;
-  height: calc(100% + 6rem); }
 
 .button {
   background: #5978ad;
@@ -354,3 +304,58 @@ textarea {
     z-index: 0; }
   .hero > * {
     z-index: 1; }
+  .hero h1, .hero h2, .hero h3, .hero h4, .hero h5 {
+    text-align: center; }
+
+/**
+ * Demo element styling
+ */
+.container > h4 {
+  margin: 1rem 0; }
+
+.frmwrk {
+  text-transform: lowercase;
+  overflow: hidden;
+  height: 1.9rem;
+  margin: 1rem 0;
+  width: auto;
+  color: #f6f6f6;
+  display: inline-block;
+  background: #5E86B3;
+  width: 7.3125rem;
+  font-size: 2em; }
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .demo *:not(textarea) {
+    flex-grow: 1; }
+  .demo__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap; }
+    .demo__row .form-row[ico] {
+      margin: .3rem 0 .3rem .3rem; }
+    @media screen and (max-width: 59.375rem) {
+      .demo__row {
+        flex-direction: column; }
+        .demo__row .form-row[ico] {
+          margin: 0; } }
+  .demo textarea {
+    max-width: unset;
+    min-width: unset; }
+
+.nav__logo .frmwrk {
+  margin: 0; }
+
+h4.head {
+  padding-top: 5.0625rem;
+  margin-top: -4.0625rem; }
+
+.hero.hero--demo {
+  padding: 10rem 0; }
+  .hero.hero--demo:before {
+    bottom: 0;
+    height: calc(100% + 6rem); }
