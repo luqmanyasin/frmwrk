@@ -14,7 +14,7 @@
         position: absolute;
         display: block;
 
-        width: 100vw;
+        width: var(--hero-width);
         height: 100%;
         background: inherit;
         content: ' ';

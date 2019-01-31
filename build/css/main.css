@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5 {
           padding: 0 0 .8rem;
           text-transform: uppercase;
           letter-spacing: 0.125rem;
-          overflow-x: scroll; }
+          overflow-x: auto; }
       .card--table__row > div {
         flex-grow: 1;
         flex-basis: 0;
@@ -324,7 +324,7 @@ textarea {
   .hero:before {
     position: absolute;
     display: block;
-    width: 100vw;
+    width: var(--hero-width);
     height: 100%;
     background: inherit;
     content: ' ';

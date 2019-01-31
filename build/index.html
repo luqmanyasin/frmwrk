@@ -177,8 +177,8 @@
             </section>
     </div>
     <script>
-        var Fr = function() {
-            var self;
+        let Fr = function() {
+            let self;
 
             function Fr() {
                 self = this;
@@ -186,26 +186,40 @@
 
             Fr.prototype.init = function() {
                 return new Fr();
-            };
+            }
 
             /**
              * General Use forEach function to iterate through nodelists efficiently
              */
-            Fr.prototype.forEach = function (array, callback, scope) {
-                for (var i = 0; i < array.length; i++) {
+            Fr.prototype.forEach = function forEach(array, callback, scope) {
+                for (let i = 0; i < array.length; i++) {
                     callback.call(scope, i, array[i]);
                 }
-            };
+            }
 
+            Fr.prototype.Util =  {};
+
+            Fr.prototype.Util.getOS = function getOS() {
+                let os;
+                if (navigator.platform.match(/(Mac)/i)) {
+                    os = 'osx';
+                } else if (navigator.platform.match(/(iPhone|iPod|iPad)/i)) {
+                    os = 'ios';
+                } else if (navigator.platform.match(/(Win)/i)) {
+                    os = 'win';
+                }
+
+                return os;
+            }
 
             /**
              * Iterate through tables and set data-title for responsive table view.
              */
-            Fr.prototype.collapsibleTable = function(selector) {
-                var tables = document.querySelectorAll(selector);
-                var titleStore = [];
+            Fr.prototype.collapsibleTable = function collapse(selector) {
+                let tables = document.querySelectorAll(selector);
+                let titleStore = [];
                 self.forEach(tables, function(index, table) {
-                    var headings = [];
+                    let headings = [];
                     self.forEach(table.children[0].children, function(index, value) {
                         headings.push(value.innerHTML);
                     });
@@ -213,7 +227,7 @@
                     self.forEach(table.children, function(index, row) {
                         if (index > 0) {
                             self.forEach(row.children, function(index, field) {
-                                var fieldSpan = document.createElement('span');
+                                let fieldSpan = document.createElement('span');
                                 fieldSpan.append(field.innerHTML);
                                 field.removeChild(field.lastChild);
                                 field.appendChild(fieldSpan);
@@ -223,13 +237,34 @@
                         }
                     });
                 });
-            };
+            }
+
+            Fr.prototype.setupHeros = function setup() {
+                let bodyWidth = document.body.clientWidth;
+                let heros = document.querySelectorAll('.hero');
+                if (self.Util.getOS() === 'win') {
+                    self.forEach(heros, function(index, hero) {
+                        hero.setAttribute('style', '--hero-width: ' + bodyWidth + 'px');
+                    });
+                } else {
+                    self.forEach(heros, function(index, hero) {
+                        hero.setAttribute('style', '--hero-width: 100vw');
+                    });
+                }
+            }
 
             return Fr;
         }
-        var fr = Fr().prototype.init();
+        let fr = Fr().prototype.init();
 
         fr.collapsibleTable('.table');
+        fr.setupHeros();
+        if (fr.Util.getOS() === 'win') {
+            window.onresize = function(e) {
+                fr.setupHeros();
+                console.log('resize')
+            }
+        }
     </script>
 
   </body>
